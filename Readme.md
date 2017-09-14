@@ -113,4 +113,4 @@ Searching around the internet, I found an interesting blog on how to use an Ardu
 
 Accurately measuing / sampling sound requires more that simply using the analogRead function to poll the ADC as this function was intended for single smaple collection rather than accurate constant rate sampling.  The blog author suggests an alternative improved approach using the 3.3V reference and "free running".  Basically, the Arudino is configured to use thge 3.3V reference as this is more stable than the 5V and, secondly, the Arduino is configured in "free running mode" to read values directly from the internal registers, effectively bypassing the analogRead function.  Have a read of the blog for more detail.
 
-
+For our situation, we really only want to measure pulse width while accurate voltage measurement is less important.  Therefore, there is no particular reason to change to the 3.3V reference.  Pulse width is a measure of time, where the ADC conversion interval is driven by the Arduino clock frequency.  
