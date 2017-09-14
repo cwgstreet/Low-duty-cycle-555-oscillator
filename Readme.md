@@ -24,13 +24,13 @@ Others have overcome this issue in two ways:
 1. Change out current sensing resistor in battery bank; or
 2. Add a dummy load on the battery bank.
 
-####1. Changing the current sense resistor
+#### 1. Changing the current sense resistor
 
 Some have chosen to hack the battery bank circuitry to defeat the auto-off feature.  Anurag Chugh has a nice blog at [http://www.electronicsfaq.com/2014/10/replacing-current-sense-resistor-in.html]() where he shows how he replaced the R100 (0.1 ohm) SMD current sense resistor with a 10 ohm through-hole resistor; an increase of the current sense of 100 times.
 
 I chose not to go with this solution as 1) this is aimed at low power projects where your project current is below the current sense threshold while my projects will have periods of extremely low draw as they sleep; and 2) I did not wish to break open the power bank and risk damaging it to get to the circuitry.
 
-####2. Dummy Load
+#### 2. Dummy Load
 
 Paul Stoffregen has a nice blog post where he used a microcontroller to work out the minimum load duration required to keep a specific power bank alive.  
 
@@ -58,7 +58,7 @@ Eventually, I came across a low duty cycle osciallator circuit based on a 555 ti
 
 
 
-###Design - LTSpice
+### Design - LTSpice
 
 First, I decided to investigate the above circuit further using LTSpice where I could play with the component values to determine if I could achieve my design goals of   
 
@@ -83,7 +83,7 @@ After playing with the component values, the LTSpice model gave me
 ![](/Users/carlwgreenstreet/Documents/Git/Low-duty-cycle-555-oscillator/Pics/LTSpice Composite.jpeg)
 
 
-###Schematic & PCB
+### Schematic & PCB
 
 Next, I drew up the schematic and PCB in KiCad.  For flexibilty and to keep costs low, I prefer etch my own homebrewed PCBs. My approach was to design the board using a combinatiuon of both surface mount and through-hole components that I already had around.  An added advantage of this approach was it made it easier to keep the board small as components could be placed on both sides yet the board remain a simple DIY etch-at-home single sided board.
 
@@ -96,16 +96,16 @@ Next, I drew up the schematic and PCB in KiCad.  For flexibilty and to keep cost
 ![Both sides of PCB in 3D - KiCad 3D](/Users/carlwgreenstreet/Documents/Git/Low-duty-cycle-555-oscillator/Pics/PCB - 3D Composite.jpeg)
 
 
-###Testing & Prototyping
+### Testing & Prototyping
 
-####Breadboard Validation
+#### Breadboard Validation
 To validate the LTSpice Model with real components, I laid the circuit out using all through-hole (critical - no switch, etc) components and tested it with the Jackery Giant+ PowerBank to ensure it defeated the auto-off feature.  Additionally, I used an Arduino Uno as a graphical voltmeter to measure and display the circuit's performance and compared it to the ideal LTSpice response.
 
 ![breadboard photograph](pic)  breadboard pic
 
 
 
-#####Arduino Voltmeter Results
+##### Arduino Voltmeter Results
 I had the idea that perhaps I could use the Arduino's ADC as a voltmeter, exporting the readings to the serial monitor and ideally being able to graphically display them, perhaps in real-time.
 
 Searching around the internet, I found an interesting blog on how to use an Arduino (via the ADC) as sound level metre.  
