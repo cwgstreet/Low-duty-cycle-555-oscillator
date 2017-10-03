@@ -1,6 +1,6 @@
 <b><i>Incomplete - in progress</i></b>
 
-<i>Note: As a hobbyist learning electronics and assoicated technologies, I like to document my projects for later reference.  I learn heavily from others so there will likely be nothing here particularly innovative or cutting edge - but if you stumble across these notes, beginners might find these notes constructive. </i>
+<i>Note: As a hobbyist learning electronics and assoicated technologies, I like to document my projects to assist my learning and for later reference.  I learn heavily from others so there will likely be nothing here that is particularly novel - but if you stumble across these notes, beginners might find these notes constructive. </i>
 
 # Low Duty Cycle 555 Oscillator
 
@@ -99,18 +99,15 @@ Next, I drew up the schematic and PCB in KiCad.  For flexibilty and to keep cost
 ### Testing & Prototyping
 
 #### Breadboard Validation
-To validate the LTSpice Model with real components, I laid the circuit out using all through-hole (critical - no switch, etc) components and tested it with the Jackery Giant+ PowerBank to ensure it defeated the auto-off feature.  Additionally, I used an Arduino Uno as a graphical voltmeter to measure and display the circuit's performance and compared it to the ideal LTSpice response.
+To validate the LTSpice Model with real components, I laid out the circuit on a breadboard using all through-hole (critical - no switch, etc) components and tested it with the Jackery Giant+ PowerBank to ensure it defeated the auto-off feature.  
 
-![breadboard photograph](pic)  breadboard pic
+![breadboard photograph](pic)  breadboard pic - to be added
 
 
 
-##### Arduino Voltmeter Results
-I had the idea that perhaps I could use the Arduino's ADC as a voltmeter, exporting the readings to the serial monitor and ideally being able to graphically display them, perhaps in real-time.
+#### Signal verification 
+Next, I wanted to compare the circuit's actual performance with the ideal LTSpice simulated response.  Lacking a proper oscilloscope, I went down a burrow Arduino 
 
-Searching around the internet, I found an interesting blog on how to use an Arduino (via the ADC) as sound level metre.  
-[https://blog.yavilevich.com/2016/08/arduino-sound-level-meter-and-spectrum-analyzer/]()
 
-Accurately measuing / sampling sound requires more that simply using the analogRead function to poll the ADC as this function was intended for single smaple collection rather than accurate constant rate sampling.  The blog author suggests an alternative improved approach using the 3.3V reference and "free running".  Basically, the Arudino is configured to use thge 3.3V reference as this is more stable than the 5V and, secondly, the Arduino is configured in "free running mode" to read values directly from the internal registers, effectively bypassing the analogRead function.  Have a read of the blog for more detail.
 
-For our situation, we really only want to measure pulse width while accurate voltage measurement is less important.  Therefore, there is no particular reason to change to the 3.3V reference.  Pulse width is a measure of time, where the ADC conversion interval is driven by the Arduino clock frequency.  
+
