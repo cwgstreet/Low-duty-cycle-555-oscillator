@@ -98,16 +98,17 @@ Next, I drew up the schematic and PCB in KiCad.  For flexibilty and to keep cost
 
 ### Testing & Prototyping
 
-#### Breadboard Validation
+#### Validation
 To validate the LTSpice Model with real components, I laid out the circuit on a breadboard using all through-hole (critical - no switch, etc) components and tested it with the Jackery Giant+ PowerBank to ensure it defeated the auto-off feature.  
 
 ![breadboard photograph](pic)  breadboard pic - to be added
 
+Once the circuit was laid out on the breadboard, I used a Rigol 1054Z Oscilloscope to compare the actual oscillator response with the idealised LTSpice simulated response.  
 
 
-#### Signal verification 
-Next, I wanted to compare the circuit's actual performance with the ideal LTSpice simulated response.  Lacking a proper oscilloscope, I went down a burrow Arduino 
+#### Prototyping
 
+I quickly created a homebrew PCB using the toner transfer and hydrogen peroxide - HCl etching.
 
 
 
