@@ -80,7 +80,7 @@ After playing with the component values, the LTSpice model gave me
 * LTSpice: 42.9ms on (high) per 1.67 sec interval
 * 193mA pulse current; generating an acceptably low 5mA "average" current draw
 
-![](/https://github.com/cwgstreet/Low-duty-cycle-555-oscillator/blob/master/Pics/LTSpice%20Composite.jpeg)
+![](https://github.com/cwgstreet/Low-duty-cycle-555-oscillator/blob/master/Pics/LTSpice%20Composite.jpeg)
 
 
 ### Schematic & PCB
