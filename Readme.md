@@ -1,4 +1,4 @@
-<b><i>Incomplete - in progress</i></b>
+
 
 <i>Note: As a hobbyist learning electronics and assoicated technologies, I like to document my projects to assist my learning and for later reference.  I learn heavily from others so there will likely be nothing here that is particularly novel - but if you stumble across these notes, beginners might find these notes constructive. </i>
 
