@@ -88,7 +88,7 @@ After playing with the component values, the LTSpice model gave me
 Next, I drew up the schematic and PCB in KiCad.  For flexibilty and to keep costs low, I prefer etch my own homebrewed PCBs. My approach was to design the board using a combinatiuon of both surface mount and through-hole components that I already had around.  An added advantage of this approach was it made it easier to keep the board small as components could be placed on both sides yet the board remain a simple DIY etch-at-home single sided board.
 
 
-![Schematic KiCad Eschema](/Users/carlwgreenstreet/Documents/Git/Low-duty-cycle-555-oscillator/Pics/Kicad-schematic.jpeg)
+![Schematic KiCad Eschema](https://github.com/cwgstreet/Low-duty-cycle-555-oscillator/blob/master/Pics/Kicad-schematic.jpeg)
 
 ![PCB with and without filled ground plane showing - KiCad PCBNew](/Users/carlwgreenstreet/Documents/Git/Low-duty-cycle-555-oscillator/Pics/PCB - composite.jpeg)
 
