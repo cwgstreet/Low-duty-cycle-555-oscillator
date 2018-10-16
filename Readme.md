@@ -80,7 +80,7 @@ After playing with the component values, the LTSpice model gave me
 * LTSpice: 42.9ms on (high) per 1.67 sec interval
 * 193mA pulse current; generating an acceptably low 5mA "average" current draw
 
-![](/Users/carlwgreenstreet/Documents/Git/Low-duty-cycle-555-oscillator/Pics/LTSpice Composite.jpeg)
+![](/https://github.com/cwgstreet/Low-duty-cycle-555-oscillator/blob/master/Pics/LTSpice%20Composite.jpeg)
 
 
 ### Schematic & PCB
@@ -90,10 +90,10 @@ Next, I drew up the schematic and PCB in KiCad.  For flexibilty and to keep cost
 
 ![Schematic KiCad Eschema](https://github.com/cwgstreet/Low-duty-cycle-555-oscillator/blob/master/Pics/Kicad-schematic.jpeg)
 
-![PCB with and without filled ground plane showing - KiCad PCBNew](/Users/carlwgreenstreet/Documents/Git/Low-duty-cycle-555-oscillator/Pics/PCB - composite.jpeg)
+![PCB with and without filled ground plane showing - KiCad PCBNew](https://github.com/cwgstreet/Low-duty-cycle-555-oscillator/blob/master/Pics/PCB%20-%20composite.jpeg)
 
 
-![Both sides of PCB in 3D - KiCad 3D](/Users/carlwgreenstreet/Documents/Git/Low-duty-cycle-555-oscillator/Pics/PCB - 3D Composite.jpeg)
+![Both sides of PCB in 3D - KiCad 3D](https://github.com/cwgstreet/Low-duty-cycle-555-oscillator/blob/master/Pics/PCB%20-%203D%20composite.jpeg)
 
 
 ### Testing & Prototyping
