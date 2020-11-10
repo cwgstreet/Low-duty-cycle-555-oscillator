@@ -36,7 +36,7 @@ Paul Stoffregen has a nice blog post where he used a microcontroller to work out
 
 [http://www.dorkbotpdx.org/blog/paul/battery_pack_load]()   
 
-This approach also caught the eye of Hackaday - written up here: [http://hackaday.com/2013/11/08/tricking-a-usb-power-supply/]()
+This approach also caught the eye of Hackaday - written up here: [https://hackaday.com/2013/11/08/tricking-a-usb-power-supply/]()
 
 Paul found out that for his specific battery bank, he only needed a ~200mA pulse on a 1.6% duty cycle .  The advantage of this approach over coninuous loads like resistors is that the total draw is only a negligible 3.5 mA given the oscillator is off most of the time with only short 20-30 msec pulses.
 
