@@ -106,9 +106,5 @@ To validate the LTSpice Model with real components, I laid out the circuit on a 
 Once the circuit was laid out on the breadboard, I used a Rigol 1054Z Oscilloscope to compare the actual oscillator response with the idealised LTSpice simulated response.  
 
 
-#### Prototyping
-
-I quickly created a homebrew PCB using the toner transfer and hydrogen peroxide - HCl etching.
-
 
 
